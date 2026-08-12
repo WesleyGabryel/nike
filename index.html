@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Descubra os Melhores Tênis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <h1>NIKE</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#categorias" class="nav-link">Categorias</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="carrinho-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">JUST DO IT</h2>
+            <p class="hero-subtitle">Descubra a Coleção Premium de Tênis Nike 2024</p>
+            <button class="hero-btn">Explore Agora</button>
+        </div>
+        <div class="hero-background">
+            <div class="floating-shoe"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CATEGORIAS -->
+    <section id="categorias" class="categorias">
+        <h2 class="section-title">CATEGORIAS</h2>
+        <div class="categorias-grid">
+            <div class="categoria-card" data-categoria="running">
+                <div class="categoria-icon">👟</div>
+                <h3>Running</h3>
+                <p>Performance e velocidade sem limites</p>
+            </div>
+            <div class="categoria-card" data-categoria="casual">
+                <div class="categoria-icon">🚶</div>
+                <h3>Casual</h3>
+                <p>Estilo e conforto para o dia a dia</p>
+            </div>
+            <div class="categoria-card" data-categoria="basketball">
+                <div class="categoria-icon">🏀</div>
+                <h3>Basketball</h3>
+                <p>Tecnologia de elite para a quadra</p>
+            </div>
+            <div class="categoria-card" data-categoria="court">
+                <div class="categoria-icon">🎾</div>
+                <h3>Court</h3>
+                <p>Clássico e versátil para todos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <h2 class="section-title">NOSSA COLEÇÃO</h2>
+        <p class="section-subtitle">Confira os modelos mais procurados da Nike</p>
+        
+        <div class="filtro-container">
+            <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+            <button class="filtro-btn" data-filtro="running">Running</button>
+            <button class="filtro-btn" data-filtro="casual">Casual</button>
+            <button class="filtro-btn" data-filtro="basketball">Basketball</button>
+            <button class="filtro-btn" data-filtro="court">Court</button>
+        </div>
+
+        <div class="produtos-grid">
+            <!-- PRODUTO 1 - Nike Kyrie Low -->
+            <div class="produto-card" data-categoria="basketball">
+                <div class="produto-image">
+                    <img src="img1.webp" alt="Nike Kyrie Low" class="shoe-image">
+                    <span class="badge-destaque">Elite</span>
+                </div>
+                <div class="produto-info">
+                    <h3>Nike Kyrie Low 4</h3>
+                    <p class="categoria-label">Basketball</p>
+                    <div class="rating">⭐⭐⭐⭐⭐ (342)</div>
+                    <p class="descricao">Movimento explosivo com tecnologia de amortecimento superior. Perfeito para jogadores que buscam mudanças de direção rápidas e agilidade na quadra. Design aerodinâmico em preto e branco para máxima performance.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 1.299,90</span>
+                        <span class="preco-original">R$ 1.699,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 2 - Jordan 1 Retro High OG -->
+            <div class="produto-card" data-categoria="casual">
+                <div class="produto-image">
+                    <img src="img2.webp" alt="Jordan 1 Retro High" class="shoe-image">
+                    <span class="badge-premium">Premium</span>
+                </div>
+                <div class="produto-info">
+                    <h3>Jordan 1 Retro High OG</h3>
+                    <p class="categoria-label">Casual/Basketball</p>
+                    <div class="rating">⭐⭐⭐⭐⭐ (512)</div>
+                    <p class="descricao">O ícone indiscutível do streetwear! Amarelo vibrante com preto elegante trazem personalidade. Construção robusta com detalhes impecáveis. Conforto clássico que transcende gerações. Um must-have para colecionadores e amantes de design.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 1.899,90</span>
+                        <span class="preco-original">R$ 2.299,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 3 - Nike Air Zoom Pegasus -->
+            <div class="produto-card" data-categoria="running">
+                <div class="produto-image">
+                    <img src="img3.webp" alt="Nike Air Zoom Pegasus" class="shoe-image">
+                    <span class="badge-novo">Novo</span>
+                </div>
+                <div class="produto-info">
+                    <h3>Nike Air Zoom Pegasus 41</h3>
+                    <p class="categoria-label">Running</p>
+                    <div class="rating">⭐⭐⭐⭐⭐ (428)</div>
+                    <p class="descricao">O melhor custo-benefício para corredores! Com tecnologia Air Zoom reactiva, oferece responsividade excepcional. Sola de borracha durável e ajuste confortável. Preto e branco minimalista que combina com qualquer look. Ideal para treinos diários.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 699,90</span>
+                        <span class="preco-original">R$ 899,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 4 - Nike KD -->
+            <div class="produto-card" data-categoria="basketball">
+                <div class="produto-image">
+                    <img src="img4.webp" alt="Nike KD Basketball" class="shoe-image">
+                    <span class="badge-destaque">Destaque</span>
+                </div>
+                <div class="produto-info">
+                    <h3>Nike KD 17 Elite</h3>
+                    <p class="categoria-label">Basketball</p>
+                    <div class="rating">⭐⭐⭐⭐⭐ (289)</div>
+                    <p class="descricao">Engenharia de elite para jogadores versáteis! Preto com detalhes dourados representa poder e elegância na quadra. Tecnologia de amortecimento de ponta para saltos explosivos. Sola bem trabalhada para máxima tração. Feito para vencedores.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 1.599,90</span>
+                        <span class="preco-original">R$ 1.999,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 5 - Nike Omni Multi Court -->
+            <div class="produto-card" data-categoria="court">
+                <div class="produto-image">
+                    <img src="img5.webp" alt="Nike Omni Multi Court" class="shoe-image">
+                </div>
+                <div class="produto-info">
+                    <h3>Nike Omni Multi Court</h3>
+                    <p class="categoria-label">Court</p>
+                    <div class="rating">⭐⭐⭐⭐ (156)</div>
+                    <p class="descricao">Versatilidade em primeiro lugar! Cores quentes em bege/creme com azul marinho. Excelente para atividades variadas e uso casual. Conforto o dia todo com suporte estruturado. Palmilha responsiva que alivia impacto. Design elegante e moderno.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 549,90</span>
+                        <span class="preco-original">R$ 699,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 6 - Nike Air Force 1 -->
+            <div class="produto-card" data-categoria="casual">
+                <div class="produto-image">
+                    <img src="img6.webp" alt="Nike Air Force 1 White" class="shoe-image">
+                    <span class="badge-novo">Clássico</span>
+                </div>
+                <div class="produto-info">
+                    <h3>Nike Air Force 1 Low</h3>
+                    <p class="categoria-label">Casual</p>
+                    <div class="rating">⭐⭐⭐⭐⭐ (789)</div>
+                    <p class="descricao">O ícone atemporal do streetwear! Branco puro com detalhes em preto minimalista. Construção de couro premium que envelhece com estilo. Conforto incomparável que dura anos. Combina com tudo - de jeans a cargos. Essencial em qualquer guarda-roupa.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 549,90</span>
+                        <span class="preco-original">R$ 699,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 7 - Nike Flex Runner -->
+            <div class="produto-card" data-categoria="running">
+                <div class="produto-image">
+                    <img src="img7.webp" alt="Nike Flex Runner Pink" class="shoe-image">
+                </div>
+                <div class="produto-info">
+                    <h3>Nike Flex Runner</h3>
+                    <p class="categoria-label">Running</p>
+                    <div class="rating">⭐⭐⭐⭐ (201)</div>
+                    <p class="descricao">Leveza e dinamismo em rosa vibrant! Perfeito para quem busca estilo colorido sem abrir mão de performance. Flexibilidade excepcional na sola para movimentos naturais. Peso mínimo, conforto máximo. Ótimo para iniciantes em running.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 399,90</span>
+                        <span class="preco-original">R$ 499,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 8 - Nike Air Force 1 Tan -->
+            <div class="produto-card" data-categoria="casual">
+                <div class="produto-image">
+                    <img src="img8.webp" alt="Nike Air Force 1 Tan" class="shoe-image">
+                    <span class="badge-destaque">Trending</span>
+                </div>
+                <div class="produto-info">
+                    <h3>Nike Air Force 1 Premium Suede</h3>
+                    <p class="categoria-label">Casual</p>
+                    <div class="rating">⭐⭐⭐⭐⭐ (334)</div>
+                    <p class="descricao">Sofisticação em tons quentes! Marrom tan com suede premium para textura luxuosa. Toque clássico com upgrade material. Pair perfeito para looks warm e aconchegantes. Detalhe branco da sola equilibra elegantemente. Investimento em estilo duradouro.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 699,90</span>
+                        <span class="preco-original">R$ 899,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 9 - Nike Air Max 270 -->
+            <div class="produto-card" data-categoria="running">
+                <div class="produto-image">
+                    <img src="img9.webp" alt="Nike Air Max 270 White" class="shoe-image">
+                    <span class="badge-novo">Futurista</span>
+                </div>
+                <div class="produto-info">
+                    <h3>Nike Air Max 270</h3>
+                    <p class="categoria-label">Running</p>
+                    <div class="rating">⭐⭐⭐⭐⭐ (567)</div>
+                    <p class="descricao">Design futurista com toda a potência do Air Max! Branco limpo com detalhe azul turquesa no air unit. Visibilidade máxima do amortecimento na sola lateral. Conforto o dia todo para uso casual ou treino leve. Visual arrojado que rouba atenção.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 899,90</span>
+                        <span class="preco-original">R$ 1.199,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 10 - Nike Revolution -->
+            <div class="produto-card" data-categoria="running">
+                <div class="produto-image">
+                    <img src="img10.webp" alt="Nike Revolution Neon" class="shoe-image">
+                    <span class="badge-novo">Energy</span>
+                </div>
+                <div class="produto-info">
+                    <h3>Nike Revolution 7</h3>
+                    <p class="categoria-label">Running</p>
+                    <div class="rating">⭐⭐⭐⭐ (423)</div>
+                    <p class="descricao">Energia pura em preto e verde neon! Design agressivo com swoosh fluorescente que brilha. Sola responsiva e leve para corridas casual. Ajuste confortável e seguro para treinos diários. Ótima relação preço-performance. Statements wear que chama atenção.</p>
+                    <div class="preco-container">
+                        <span class="preco">R$ 449,90</span>
+                        <span class="preco-original">R$ 599,00</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="sobre-container">
+            <h2 class="section-title">SOBRE A NIKE</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>A Nike é sinônimo de inovação, qualidade e performance. Com mais de 50 anos de história, continuamos revolucionando o mundo do esporte e lifestyle com produtos de excelência.</p>
+                    <p>Cada um dos nossos tênis é desenvolvido com tecnologia de ponta, pesquisa de desempenho e dedicação ao detalhe, trazendo o melhor para atletas profissionais e entusiastas do dia a dia.</p>
+                    <div class="sobre-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Anos de Inovação</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Modelos Diferentes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO NEWSLETTER -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Fique por dentro das Novidades</h2>
+            <p>Receba nossas ofertas exclusivas e lançamentos direto no seu email</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Seu email aqui..." required>
+                <button type="submit" class="newsletter-btn">Inscrever</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre</h4>
+                <ul>
+                    <li><a href="#">Nossa História</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Devoluções</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nike. Todos os direitos reservados. | Just Do It™</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
